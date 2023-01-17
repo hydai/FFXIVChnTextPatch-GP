@@ -1,0 +1,39 @@
+name: Build on MacOS
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+on:
+  push:
+    branch:
+      - master
+  pull_request:
+    branch:
+      - master
+
+jobs:
+  build_on_macos:
+    runs-on: macos-12
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Install OpenJDK@11
+        run: |
+          brew install openjdk@11
+      - name: Install Gradle
+        run: |
+          wget https://services.gradle.org/distributions/gradle-6.8.3-bin.zip
+          unzip gradle-6.8.3-bin.zip
+      - name: Download univocity-parsers
+        run: |
+          mkdir -p libs
+          cd libs
+          wget https://oss.sonatype.org/service/local/repositories/releases/content/com/univocity/univocity-parsers/2.9.1/univocity-parsers-2.9.1.jar
+      - name: Build
+        run: |
+          export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
+          export PATH="${GITHUB_WORKSPACE}/gradle-6.8.3/bin:$PATH"
+          export JAVA_HOME="/usr/local/opt/openjdk@11/libexec/openjdk.jdk/Contents/Home"
+          gradle build
