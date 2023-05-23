@@ -237,6 +237,9 @@ int32,str
 238,BannerPartySetting
 239,BannerMIP
 240,BannerMIPSetting
+241,RetainerTaskSupply
+242,Class2JobHotbar
+243,ConfigChatLogNameSetting
 248,GoldSaucerInfo
 249,GSInfoEditDeck
 262,TripleTriadRanking

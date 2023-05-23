@@ -81,3 +81,13 @@ int32,str,str
 76,Update_SDG_GetAny_630,custom
 77,Update_Weapon_GetAny_630,custom
 78,Update_DD3_Reached100floor_Solo,custom
+79,Update_Trial_640_Complete,custom
+80,Update_Raid8_640N_Complete,custom
+81,Update_Raid8_640H_Complete,custom
+82,Update_IKD_PointsReached_OneGame_640,custom
+83,Update_SDG_GetAny_640,custom
+84,Update_Weapon_GetAny_640,custom
+85,Update_AOZ_LearningCount,custom
+86,Update_AOZ_ReportCompleteCount,custom
+87,Update_VVD_640_Progress,custom
+88,Update_VVD_640_HardComplete,custom
