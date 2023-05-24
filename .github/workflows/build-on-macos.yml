@@ -9,6 +9,9 @@ on:
     branch:
       - master
       - hydai
+    tags:
+      - "v*.*.*"
+      - "*.*.*"
   pull_request:
     branch:
       - master
@@ -35,7 +38,36 @@ jobs:
           wget https://oss.sonatype.org/service/local/repositories/releases/content/com/univocity/univocity-parsers/2.9.1/univocity-parsers-2.9.1.jar
       - name: Build
         run: |
-          export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
+          export PATH="$(brew --prefix)/opt/openjdk@11/bin:$PATH"
           export PATH="${GITHUB_WORKSPACE}/gradle-6.8.3/bin:$PATH"
-          export JAVA_HOME="/usr/local/opt/openjdk@11/libexec/openjdk.jdk/Contents/Home"
+          export JAVA_HOME="$(brew --prefix)/opt/openjdk@11/libexec/openjdk.jdk/Contents/Home"
           gradle build
+      - name: Package distributions
+        run: |
+          # Prepare workspace
+          mkdir -p workspace
+          cp ./build/distributions/FFXIVChnTextPatch-GP.zip ./workspace
+          # Current path: ${GITHUB_WORKSPACE}
+          cd workspace
+          # Current path: ${GITHUB_WORKSPACE}/workspace
+          unzip ./FFXIVChnTextPatch-GP.zip
+          rm ./FFXIVChnTextPatch-GP.zip
+          cd FFXIVChnTextPatch-GP
+          # Current path: ${GITHUB_WORKSPACE}/workspace/FFXIVChnTextPatch-GP
+          cp -r ../../conf ./
+          cp -r ../../resource ./
+          # Create a shortcut
+          cp ../../.github/script/FFXIVChnTextPatchGP ./
+          cd ../
+          # Current path: ${GITHUB_WORKSPACE}/workspace
+          zip -r FFXIVChnTextPatch-GP-macOS.zip FFXIVChnTextPatch-GP/ -x "*.DS_Store"
+      - name: Upload macOS assets
+        uses: actions/upload-artifact@v3
+        with:
+          name: FFXIVChnTextPatch-GP-macOS
+          path: ./workspace/FFXIVChnTextPatch-GP-macOS.zip
+      - name: Release macOS assets
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: ./workspace/FFXIVChnTextPatch-GP-macOS.zip
