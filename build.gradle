@@ -11,12 +11,14 @@ buildscript {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 		classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
 		classpath("org.jetbrains.kotlin:kotlin-allopen:${kotlinVersion}")
+		classpath('io.github.fvarrui:javapackager:1.7.2')
 	}
 }
 
 apply plugin: 'idea'
 apply plugin: 'java'
 apply plugin: 'application'
+apply plugin: 'io.github.fvarrui.javapackager.plugin'
 
 sourceSets {
     main {
@@ -70,6 +72,18 @@ task copyLibs(type: Copy) {
 	from 'lib'
 	into 'build/lib'
 }
+
+task packageMacApp(type: io.github.fvarrui.javapackager.gradle.PackageTask, dependsOn: build) {
+	// mandatory
+	mainClass = mainClassName
+	// optional
+	bundleJre = true
+	generateInstaller = false
+	administratorRequired = false
+	platform = "mac"
+	additionalResources = [ file('resource'), file('conf') ]
+}
+
 
 tasks.withType(GroovyCompile) {
 	groovyOptions.encoding = "MacRoman"
