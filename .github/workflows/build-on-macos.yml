@@ -77,6 +77,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
+          body_path: macOS-CHANGELOG.txt
           files: |
             ./workspace/FFXIVChnTextPatch-GP-macOS.zip
             ./workspace/FFXIVChnTextPatch-GP-macOS-app.zip
