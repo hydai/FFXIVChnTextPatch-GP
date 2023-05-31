@@ -86,7 +86,7 @@ task packageMacApp(type: io.github.fvarrui.javapackager.gradle.PackageTask, depe
 	mainClass = mainClassName
 	// optional
 	bundleJre = true
-	generateInstaller = false
+	generateInstaller = true
 	administratorRequired = false
 	platform = "mac"
 	additionalResources = [ file('resource'), file('conf') ]
