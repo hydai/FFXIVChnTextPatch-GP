@@ -46,6 +46,7 @@ jobs:
         run: |
           # Prepare workspace
           mkdir -p workspace
+          cp -r ./build/distributions/FFXIVChnTextPatch-GP/FFXIVChnTextPatch-GP.app ./workspace
           cp ./build/distributions/FFXIVChnTextPatch-GP.zip ./workspace
           # Current path: ${GITHUB_WORKSPACE}
           cd workspace
@@ -61,13 +62,21 @@ jobs:
           cd ../
           # Current path: ${GITHUB_WORKSPACE}/workspace
           zip -r FFXIVChnTextPatch-GP-macOS.zip FFXIVChnTextPatch-GP/ -x "*.DS_Store"
+          zip -r FFXIVChnTextPatch-GP-macOS-app.zip FFXIVChnTextPatch-GP.app
       - name: Upload macOS assets
         uses: actions/upload-artifact@v3
         with:
           name: FFXIVChnTextPatch-GP-macOS
           path: ./workspace/FFXIVChnTextPatch-GP-macOS.zip
+      - name: Upload macOS assets
+        uses: actions/upload-artifact@v3
+        with:
+          name: FFXIVChnTextPatch-GP-macOS-app
+          path: ./workspace/FFXIVChnTextPatch-GP-macOS-app.zip
       - name: Release macOS assets
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: ./workspace/FFXIVChnTextPatch-GP-macOS.zip
+          files: |
+            ./workspace/FFXIVChnTextPatch-GP-macOS.zip
+            ./workspace/FFXIVChnTextPatch-GP-macOS-app.zip
