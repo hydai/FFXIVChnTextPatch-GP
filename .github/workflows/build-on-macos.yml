@@ -65,17 +65,17 @@ jobs:
           # Current path: ${GITHUB_WORKSPACE}/workspace
           zip -r FFXIVChnTextPatch-GP-macOS.zip FFXIVChnTextPatch-GP/ -x "*.DS_Store"
           zip -r FFXIVChnTextPatch-GP-macOS-app.zip FFXIVChnTextPatch-GP.app
-      - name: Upload macOS assets
+      - name: Upload zip
         uses: actions/upload-artifact@v3
         with:
           name: FFXIVChnTextPatch-GP-macOS
           path: ./workspace/FFXIVChnTextPatch-GP-macOS.zip
-      - name: Upload macOS assets
+      - name: Upload app
         uses: actions/upload-artifact@v3
         with:
           name: FFXIVChnTextPatch-GP-macOS-app
           path: ./workspace/FFXIVChnTextPatch-GP-macOS-app.zip
-      - name: Upload macOS assets
+      - name: Upload dmg
         uses: actions/upload-artifact@v3
         with:
           name: FFXIVChnTextPatch-GP-macOS-dmg
