@@ -82,6 +82,11 @@ task packageMacApp(type: io.github.fvarrui.javapackager.gradle.PackageTask, depe
 	administratorRequired = false
 	platform = "mac"
 	additionalResources = [ file('resource'), file('conf') ]
+	macConfig {
+		macStartup = "UNIVERSAL"
+		generateDmg = true
+		generatePkg = false
+    }
 }
 
 
