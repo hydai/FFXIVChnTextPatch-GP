@@ -3,7 +3,35 @@
 對應原本 repo 的 [PatchTool 6.4 5/26 v3.1.0.2 版本](https://github.com/GpointChen/FFXIVChnTextPatch-GP/releases/tag/v3.1.0.2)
 此處只提供 macOS 的版本使用，經測試 Intel 與 Apple Silicon 系列都能正確執行。
 
+## 安裝方式
+
+### DMG 檔案 (懶人版)
+
+請根據你的硬體下載對應的 dmg 檔案
+
+```
+FFXIVChnTextPatch-GP-Intel.dmg # <--- 如果你是 Intel 版的 mac
+FFXIVChnTextPatch-GP-AppleSilicon.dmg # <--- 如果你是 AppleSilicon(M1/M2/Mx) 版的 mac
+```
+
+點兩下下載的檔案，掛載 dmg 以後，再點兩下 `FFXIVChnTextPatchGP.app` 執行即可
+
+### 自備 OpenJDK 11 的夥伴 (知道怎麼設定並安裝 openjdk 再用這個)
+
+#### 執行所需環境
+
+使用前請確定你的環境有安裝 `openjdk`
+
+本專案以 openjdk 11 進行編譯，請確保你的版本與我一致：
+```
+openjdk 11.0.18 2023-01-17
+OpenJDK Runtime Environment Homebrew (build 11.0.18+0)
+OpenJDK 64-Bit Server VM Homebrew (build 11.0.18+0, mixed mode)
+```
+
+推薦使用 [Homebrew](https://brew.sh/index_zh-tw) 進行安裝： `brew install openjdk@11`
+
 ## 執行步驟
 
-1. 下載 FFXIVChnTextPatch-GP-macOS.dmg
-2. 掛載 dmg 以後，點兩下 `FFXIVChnTextPatchGP.app` 執行即可
+1. 下載 FFXIVChnTextPatch-GP-macOS.zip
+2. 解壓縮以後，點兩下 `FFXIVChnTextPatchGP` 執行即可
