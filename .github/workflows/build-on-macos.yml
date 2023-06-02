@@ -43,14 +43,20 @@ jobs:
           export JAVA_HOME="$(brew --prefix)/opt/openjdk@11/libexec/openjdk.jdk/Contents/Home"
           gradle build
           gradle packageMacApp
+      - name: Prepare universal JRE 11
+        run: |
+          bash ./.github/script/uni_jre.sh
+          # Universal JRE will be ${GITHUB_WORKSPACE}/jre
       - name: Package distributions
         run: |
           # Prepare workspace
           mkdir -p workspace
           cp -r ./build/FFXIVChnTextPatch-GP_unspecified.dmg ./workspace/FFXIVChnTextPatch-GP-Intel.dmg
+          cp -r ./build/FFXIVChnTextPatch-GP.app ./workspace/FFXIVChnTextPatch-GP.app
           cp ./build/distributions/FFXIVChnTextPatch-GP.zip ./workspace
           # Current path: ${GITHUB_WORKSPACE}
           cd workspace
+          # Handle zip version
           # Current path: ${GITHUB_WORKSPACE}/workspace
           unzip ./FFXIVChnTextPatch-GP.zip
           rm ./FFXIVChnTextPatch-GP.zip
@@ -63,11 +69,21 @@ jobs:
           cd ../
           # Current path: ${GITHUB_WORKSPACE}/workspace
           zip -r FFXIVChnTextPatch-GP-macOS.zip FFXIVChnTextPatch-GP/ -x "*.DS_Store"
+
+          # Handle app version
+          rm -rf ./workspace/FFXIVChnTextPatchGP.app/Contents/PlugIns/jre.jre
+          mv -f ../jre ./workspace/FFXIVChnTextPatchGP.app/Contents/PlugIns/jre.jre
+          zip -r FFXIVChnTextPatch-GP-app.zip FFXIVChnTextPatch-GP.app -x "*.DS_Store"
       - name: Upload zip
         uses: actions/upload-artifact@v3
         with:
           name: FFXIVChnTextPatch-GP-macOS
           path: ./workspace/FFXIVChnTextPatch-GP-macOS.zip
+      - name: Upload app
+        uses: actions/upload-artifact@v3
+        with:
+          name: FFXIVChnTextPatch-GP-macOS-app
+          path: ./workspace/FFXIVChnTextPatch-GP-app.zip
       - name: Upload dmg
         uses: actions/upload-artifact@v3
         with:
@@ -80,4 +96,5 @@ jobs:
           body_path: macOS-CHANGELOG.txt
           files: |
             ./workspace/FFXIVChnTextPatch-GP-macOS.zip
+            ./workspace/FFXIVChnTextPatch-GP-app.zip
             ./workspace/FFXIVChnTextPatch-GP-Intel.dmg
