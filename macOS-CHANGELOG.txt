@@ -1,6 +1,6 @@
 # 簡介
 
-對應原本 repo 的 [PatchTool 6.41 6/20 v3.1.1.1 版本](https://github.com/GpointChen/FFXIVChnTextPatch-GP/releases/tag/v3.1.1.1)
+對應原本 repo 的 [PatchTool 6.45 7/19 v3.1.1.4 版本](https://github.com/GpointChen/FFXIVChnTextPatch-GP/releases/tag/v3.1.1.4)
 此處只提供 macOS 的版本使用，經測試 Intel 與 Apple Silicon 系列都能正確執行。
 
 ## 安裝方式
