@@ -31,53 +31,50 @@ jobs:
         run: |
           wget https://services.gradle.org/distributions/gradle-6.8.3-bin.zip
           unzip gradle-6.8.3-bin.zip
-      - name: Download univocity-parsers
+      - name: Install 4K font
         run: |
-          mkdir -p libs
-          cd libs
-          wget https://oss.sonatype.org/service/local/repositories/releases/content/com/univocity/univocity-parsers/2.9.1/univocity-parsers-2.9.1.jar
+          brew install rar
+          mkdir -p 4k
+          cd 4k
+          wget https://github.com/GpointChen/FFXIVChnTextPatch-GP/releases/download/v3.0.1/font-custom-4k-smaller-20230131.rar
+          unrar x font-custom-4k-smaller-20230131.rar
+          cd ..
       - name: Build
-        run: |
-          export PATH="$(brew --prefix)/opt/openjdk@11/bin:$PATH"
-          export PATH="${GITHUB_WORKSPACE}/gradle-6.8.3/bin:$PATH"
-          export JAVA_HOME="$(brew --prefix)/opt/openjdk@11/libexec/openjdk.jdk/Contents/Home"
-          gradle build
-          gradle packageMacApp
-      - name: Package distributions
         run: |
           # Prepare workspace
           mkdir -p workspace
+          # Set the envs
+          export PATH="$(brew --prefix)/opt/openjdk@11/bin:$PATH"
+          export PATH="${GITHUB_WORKSPACE}/gradle-6.8.3/bin:$PATH"
+          export JAVA_HOME="$(brew --prefix)/opt/openjdk@11/libexec/openjdk.jdk/Contents/Home"
+          # Build the normal one
+          gradle build
+          gradle packageMacApp
+          # Backup the output
           cp -r ./build/FFXIVChnTextPatch-GP_unspecified.dmg ./workspace/FFXIVChnTextPatch-GP-Intel.dmg
-          cp ./build/distributions/FFXIVChnTextPatch-GP.zip ./workspace
-          # Current path: ${GITHUB_WORKSPACE}
-          cd workspace
-          # Current path: ${GITHUB_WORKSPACE}/workspace
-          unzip ./FFXIVChnTextPatch-GP.zip
-          rm ./FFXIVChnTextPatch-GP.zip
-          cd FFXIVChnTextPatch-GP
-          # Current path: ${GITHUB_WORKSPACE}/workspace/FFXIVChnTextPatch-GP
-          cp -r ../../conf ./
-          cp -r ../../resource ./
-          # Create a shortcut
-          cp ../../.github/script/FFXIVChnTextPatchGP ./
-          cd ../
-          # Current path: ${GITHUB_WORKSPACE}/workspace
-          zip -r FFXIVChnTextPatch-GP-macOS.zip FFXIVChnTextPatch-GP/ -x "*.DS_Store"
-      - name: Upload zip
-        uses: actions/upload-artifact@v3
-        with:
-          name: FFXIVChnTextPatch-GP-macOS
-          path: ./workspace/FFXIVChnTextPatch-GP-macOS.zip
-      - name: Upload dmg
+          # Overwrite the font with 4k version
+          cp ./4k/font/* ./resource/font
+          # Build the normal one
+          gradle clean
+          gradle build
+          gradle packageMacApp
+          # Backup the output
+          cp -r ./build/FFXIVChnTextPatch-GP_unspecified.dmg ./workspace/FFXIVChnTextPatch-GP-4k-Intel.dmg
+      - name: Upload normal dmg
         uses: actions/upload-artifact@v3
         with:
           name: FFXIVChnTextPatch-GP-macOS-dmg
           path: ./workspace/FFXIVChnTextPatch-GP-Intel.dmg
+      - name: Upload 4k dmg
+        uses: actions/upload-artifact@v3
+        with:
+          name: FFXIVChnTextPatch-GP-4k-macOS-dmg
+          path: ./workspace/FFXIVChnTextPatch-GP-4k-Intel.dmg
       - name: Release macOS assets
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
           body_path: macOS-CHANGELOG.txt
           files: |
-            ./workspace/FFXIVChnTextPatch-GP-macOS.zip
             ./workspace/FFXIVChnTextPatch-GP-Intel.dmg
+            ./workspace/FFXIVChnTextPatch-GP-4k-Intel.dmg
