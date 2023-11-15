@@ -5,13 +5,22 @@
 
 ## 安裝方式
 
-### DMG 檔案 (懶人版)
+請根據「你的硬體」與「想使用的字體版本」下載對應的 dmg 檔案
 
-請根據你的硬體下載對應的 dmg 檔案
+### 普通字體
 
 ```
 FFXIVChnTextPatch-GP-Intel.dmg # <--- 如果你是 Intel 版的 mac
 FFXIVChnTextPatch-GP-AppleSilicon.dmg # <--- 如果你是 AppleSilicon(M1/M2/Mx) 版的 mac
 ```
+
+### 4K 字體
+
+```
+FFXIVChnTextPatch-GP-4k-Intel.dmg # <--- 如果你是 Intel 版的 mac
+FFXIVChnTextPatch-GP-4k-AppleSilicon.dmg # <--- 如果你是 AppleSilicon(M1/M2/Mx) 版的 mac
+```
+
+## 使用方式
 
 點兩下下載的檔案，掛載 dmg 以後，再點兩下 `FFXIVChnTextPatchGP.app` 執行即可
