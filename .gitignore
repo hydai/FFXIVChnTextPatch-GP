@@ -2,6 +2,7 @@
 .settings/
 
 /backup/*
+/backup-*/
 /bin/
 /docs/scripts/*
 /jre/
