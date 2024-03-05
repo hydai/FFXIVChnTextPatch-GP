@@ -9,5 +9,6 @@
 	<classpathentry kind="lib" path="D:/Java/jars/jzlib-1.1.3.jar"/>
 	<classpathentry kind="lib" path="D:/Java/jars/nlp-lang-1.7.6.jar"/>
 	<classpathentry kind="lib" path="D:/Java/jars/univocity-parsers-2.9.1.jar"/>
+	<classpathentry kind="lib" path="D:/Java/jars/jsoup-1.17.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

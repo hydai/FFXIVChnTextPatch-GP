@@ -19,3 +19,5 @@ debug.*
 .gradle
 .idea
 build
+
+src/main/java/name/yumao/ffxiv/chn/util/GodbertUtil.java
