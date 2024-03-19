@@ -19,7 +19,14 @@ on:
 
 jobs:
   build_on_macos:
-    runs-on: macos-12
+    strategy:
+      matrix:
+        include:
+          - runner: macos-12
+            arch: Intel
+          - runner: macos-14
+            arch: AppleSilicon
+    runs-on: ${{ matrix.runner }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -51,7 +58,7 @@ jobs:
           gradle build
           gradle packageMacApp
           # Backup the output
-          cp -r ./build/FFXIVChnTextPatch-GP_unspecified.dmg ./workspace/FFXIVChnTextPatch-GP-Intel.dmg
+          cp -r ./build/FFXIVChnTextPatch-GP_unspecified.dmg ./workspace/FFXIVChnTextPatch-GP-${{ matrix.arch }}.dmg
           # Overwrite the font with 4k version
           cp ./4k/font/* ./resource/font
           # Build the normal one
@@ -59,22 +66,22 @@ jobs:
           gradle build
           gradle packageMacApp
           # Backup the output
-          cp -r ./build/FFXIVChnTextPatch-GP_unspecified.dmg ./workspace/FFXIVChnTextPatch-GP-4k-Intel.dmg
+          cp -r ./build/FFXIVChnTextPatch-GP_unspecified.dmg ./workspace/FFXIVChnTextPatch-GP-4k-${{ matrix.arch }}.dmg
       - name: Upload normal dmg
         uses: actions/upload-artifact@v3
         with:
-          name: FFXIVChnTextPatch-GP-macOS-dmg
-          path: ./workspace/FFXIVChnTextPatch-GP-Intel.dmg
+          name: FFXIVChnTextPatch-GP-macOS-${{ matrix.arch }}-dmg
+          path: ./workspace/FFXIVChnTextPatch-GP-${{ matrix.arch }}.dmg
       - name: Upload 4k dmg
         uses: actions/upload-artifact@v3
         with:
-          name: FFXIVChnTextPatch-GP-4k-macOS-dmg
-          path: ./workspace/FFXIVChnTextPatch-GP-4k-Intel.dmg
+          name: FFXIVChnTextPatch-GP-4k-macOS-${{ matrix.arch }}-dmg
+          path: ./workspace/FFXIVChnTextPatch-GP-4k-${{ matrix.arch }}.dmg
       - name: Release macOS assets
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
           body_path: macOS-CHANGELOG.txt
           files: |
-            ./workspace/FFXIVChnTextPatch-GP-Intel.dmg
-            ./workspace/FFXIVChnTextPatch-GP-4k-Intel.dmg
+            ./workspace/FFXIVChnTextPatch-GP-${{ matrix.arch }}.dmg
+            ./workspace/FFXIVChnTextPatch-GP-4k-${{ matrix.arch }}.dmg
