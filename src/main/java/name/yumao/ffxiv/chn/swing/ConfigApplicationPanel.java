@@ -298,7 +298,7 @@ public class ConfigApplicationPanel extends JFrame implements ActionListener {
 	private boolean isFFXIVFloder(String path) {
 		if (path == null)
 			return false; 
-		return (new File(path + File.separator + "game" + File.separator + "ffxiv.exe")).exists();
+		return (new File(path + File.separator + "game" + File.separator + "ffxiv_dx11.exe")).exists();
 	}
 	
 	public static void main(String[] args) {

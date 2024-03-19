@@ -65,6 +65,6 @@ public class FFXIVPatchMain {
 	private static boolean isFFXIVFloder(String path) {
 		if (path == null)
 			return false; 
-		return (new File(path + File.separator + "game" + File.separator + "ffxiv.exe")).exists();
+		return (new File(path + File.separator + "game" + File.separator + "ffxiv_dx11.exe")).exists();
 	}
 }

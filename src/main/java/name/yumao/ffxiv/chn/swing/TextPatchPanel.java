@@ -223,7 +223,7 @@ public class TextPatchPanel extends JFrame implements ActionListener {
 	private boolean isFFXIVFloder(String path) {
 		if (path == null)
 			return false; 
-		if ((new File(path + File.separator + "game" + File.separator + "ffxiv.exe")).exists())
+		if ((new File(path + File.separator + "game" + File.separator + "ffxiv_dx11.exe")).exists())
 			return true; 
 		return false;
 	}
