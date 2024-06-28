@@ -293,7 +293,7 @@ public class ReplaceEXDF {
 										// `offsetInteger` is the corresponding column number in CSV
 										Integer offsetInteger = offsetMap.get(Integer.valueOf(exdfDatasetSE.offset));
 										String[] rowStrings = csvDataMap.get(listEntryIndex);
-										if (rowStrings != null) {
+										if (rowStrings != null && offsetInteger != null) {
 											String readString = rowStrings[offsetInteger];
 											String newString = new String();
 											boolean isHexString = false;

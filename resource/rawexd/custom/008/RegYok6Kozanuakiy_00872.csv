@@ -1,0 +1,17 @@
+﻿key,0,1
+#,,
+offset,0,4
+int32,str,str
+0,TEXT_REGYOK6KOZANUAKIY_00872_GINUHANU_000_000,好，好，你算是撤退了。<hex:02100103>如果有什麼不懂的，我將解釋給你。★
+1,TEXT_REGYOK6KOZANUAKIY_00872_GINUHANU_000_001,對於侍奉凱茨哈利大人的理由，<hex:02100103>希望您也能理解！<hex:02100103>如果還有其他不懂的事情，我將解釋給您。★
+2,TEXT_REGYOK6KOZANUAKIY_00872_GINUHANU_000_002,神轎上的烏克拉瑪托大人成為了新的武王，<hex:02100103>對我來說將成為一生的榮耀。<hex:02100103>那麼，關於這片土地的任何事情，我都會解釋給您。★
+3,TEXT_REGYOK6KOZANUAKIY_00872_GINUHANU_000_003,我想再次舉辦伊希哈那祭，<hex:02100103>並且想邀請連王大人參加。<hex:02100103>那麼，請隨意問起這片土地的任何事情，我都會解釋給您。★
+4,TEXT_REGYOK6KOZANUAKIY_00872_Q1_000_000,要問什麼呢？★
+5,TEXT_REGYOK6KOZANUAKIY_00872_A1_000_001,請告訴我關於你的事情
+6,TEXT_REGYOK6KOZANUAKIY_00872_A1_000_002,這裡是什麼地方？
+7,TEXT_REGYOK6KOZANUAKIY_00872_A1_000_003,取消★
+8,TEXT_REGYOK6KOZANUAKIY_00872_GINUHANU_000_010,我在這裡負責保安，<hex:02100103>同時在平時會對這個地方進行如此說明。★
+9,TEXT_REGYOK6KOZANUAKIY_00872_GINUHANU_000_011,雖然我並不擅長說話，<hex:02100103>但我會盡我所能讓凱茨哈利大人的名聲廣為人知。<hex:02100103>能有像閣下這樣造訪這裡的人，我感到非常高興。★
+10,TEXT_REGYOK6KOZANUAKIY_00872_GINUHANU_000_020,這裡是供奉豐饒之神凱茨哈利大人的「科札努亞·奇」。<hex:02100103>在廣袤的科沙瑪魯卡湿地中，<hex:02100103>這一帶受到陽光照射，帶來了適度的乾燥。★
+11,TEXT_REGYOK6KOZANUAKIY_00872_GINUHANU_000_021,在我們的祭典中，也扮演著重要的角色。<hex:02100103>目前優先處理大風暴的復原工作，舉辦活動也變得岌岌可危……<hex:02100103>但有一天，有一天，我很想讓您也看到這一切。★
+12,TEXT_REGYOK6KOZANUAKIY_00872_GINUHANU_000_022,凱茨哈利大人為我們帶來豐盛的收穫。<hex:02100103>我在最近的祭典中再次深刻感受到這一點。★

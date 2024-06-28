@@ -1,0 +1,17 @@
+﻿key,0,1
+#,,
+offset,0,4
+int32,str,str
+0,TEXT_REGYOK6WORLARSECHO_00870_TAHRAFAHR_000_000,哦，歡迎光臨。<hex:02100103>這裡是約卡胃族居住的瓦拉的餘響……。<hex:02100103>除了佩爾佩爾族以外的客人，好久不見了呢。★
+1,TEXT_REGYOK6WORLARSECHO_00870_TAHRAFAHR_000_001,啊，瓦利加爾曼達被釋放了……<hex:02100103>請至少讓我們談談這片土地的事情吧。<hex:02100103>希望你的記憶中，我們能夠繼續生存下去……。★
+2,TEXT_REGYOK6WORLARSECHO_00870_TAHRAFAHR_000_002,我永遠不會忘記顧客的力量。<hex:02100103>在這片土地上生活的我們的記憶將繼續延續……。<hex:02100103>如果您願意，我也希望您能了解我們。★
+3,TEXT_REGYOK6WORLARSECHO_00870_TAHRAFAHR_000_003,據說擊敗瓦利加爾曼達的那位成為了聯王，<hex:02100103>這真是令人欣喜的消息呢。<hex:02100103>讓這份記憶也刻在我的陵墓吧。★
+4,TEXT_REGYOK6WORLARSECHO_00870_Q1_000_000,想問什麼呢？★
+5,TEXT_REGYOK6WORLARSECHO_00870_A1_000_001,請告訴我關於你的事情
+6,TEXT_REGYOK6WORLARSECHO_00870_A1_000_002,這裡是什麼地方？
+7,TEXT_REGYOK6WORLARSECHO_00870_A1_000_003,取消★
+8,TEXT_REGYOK6WORLARSECHO_00870_TAHRAFAHR_000_010,我通常會招待大家用餐。<hex:02100103>而且，我被認為發音溫和，被賦予解釋外來人士公用語的職責。★
+9,TEXT_REGYOK6WORLARSECHO_00870_TAHRAFAHR_000_011,雖然我不認為自己那麼溫和，<hex:02100103>但其他同胞中可能也有說話粗魯的人吧……？<hex:02100103>大家都沒有惡意，請多包涵。★
+10,TEXT_REGYOK6WORLARSECHO_00870_TAHRAFAHR_000_012,即使所有人的肉體被生還的天災焚燒，<hex:02100103>只要有人記得，那就足夠了……<hex:02100103>希望你平安逃生。★
+11,TEXT_REGYOK6WORLARSECHO_00870_TAHRAFAHR_000_020,這裡被稱為「戰士之響」。<hex:02100103>每一塊岩石堆疊的聲音，形成了山脈的響聲……<hex:02100103>這是我們尤卡富伊族的誕生地，也是我們永遠的家園。★
+12,TEXT_REGYOK6WORLARSECHO_00870_TAHRAFAHR_000_021,與外界的交流很少，這裡只有尤卡富伊族。<hex:02100103>我們修復古老的石造住宅，與祖先一起安靜地生活。★

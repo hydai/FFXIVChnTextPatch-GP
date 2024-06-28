@@ -1,0 +1,17 @@
+﻿key,0,1
+#,,
+offset,0,4
+int32,str,str
+0,TEXT_REGSAK6ELECTROPESTRIKE_00886_PETAL_000_000,沒有安裝調節器就來到這裡，<hex:02100103>真是相當危險的傢伙呢！<hex:02100103>是有緊急的事情嗎？★
+1,TEXT_REGSAK6ELECTROPESTRIKE_00886_Q1_000_000,要問什麼呢？★
+2,TEXT_REGSAK6ELECTROPESTRIKE_00886_A1_000_001,請告訴我關於你的事情
+3,TEXT_REGSAK6ELECTROPESTRIKE_00886_A1_000_002,這裡是什麼地方？
+4,TEXT_REGSAK6ELECTROPESTRIKE_00886_A1_000_003,取消★
+5,TEXT_REGSAK6ELECTROPESTRIKE_00886_PETAL_000_010,什麼嘛，你是想問關於我自己的事情嗎？<hex:02100103>只是管理採石出口時間表的，<hex:02100103>這種不起眼的監督角色而已。★
+6,TEXT_REGSAK6ELECTROPESTRIKE_00886_PETAL_000_011,本來是屬於特羅爾部落的人，但和外圍的人一樣，<hex:02100103>並不一定要堅持「生活在大地之上」。 <hex:02100103>不過，在基地裡的工作也並不適合我。★
+7,TEXT_REGSAK6ELECTROPESTRIKE_00886_PETAL_000_012,最後，我希望能在日常生活中住在基地內，<hex:02100103>但同時從事外部工作這樣的工作。★
+8,TEXT_REGSAK6ELECTROPESTRIKE_00886_PETAL_000_020,這裡是「電氣獸採石場」。 <hex:02100103>就字面上來說，這裡是採石電氣獸，然後將其運送到加工設施的地方。★
+9,TEXT_REGSAK6ELECTROPESTRIKE_00886_PETAL_000_021,由於電氣獸擁有無限的潛力，所以…… <hex:02100103>採石和運輸對於亞歷山卓來說有多麼重要，<hex:02100103>想必不用多做解釋就能明白吧？★
+10,TEXT_REGSAK6ELECTROPESTRIKE_00886_PETAL_000_022,當我們在這裡工作的同時，<hex:02100103>就覺得國家會變得更加充實，這樣做是有價值的。★
+11,TEXT_REGSAK6ELECTROPESTRIKE_00886_PETAL_000_023,正因如此，我一直以為這份工作是值得自豪的，但是，<hex:02100103>當在基地裡機械士兵肆虐時，我再次意識到了。★
+12,TEXT_REGSAK6ELECTROPESTRIKE_00886_PETAL_000_024,這裡的電氣獸，被用於軍事用途……<hex:02100103>被用來傷害人的事實是理所當然的。<hex:02100103>現在不能輕易退出……我的心情變得複雜了。★

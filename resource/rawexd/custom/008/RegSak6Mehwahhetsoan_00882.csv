@@ -1,0 +1,17 @@
+﻿key,0,1
+#,,
+offset,0,4
+int32,str,str
+0,TEXT_REGSAK6MEHWAHHETSOAN_00882_TSEPPI_000_000,哦，身披異國風情的旅者啊……<hex:02100103>來到メワヘイゾーン，你尋求著什麼呢？<hex:02100103>若你所期望的就在這裡那便太好了。★
+1,TEXT_REGSAK6MEHWAHHETSOAN_00882_TSEPPI_000_001,樹木和草叢發出的細語聲，似乎在提醒著我們危險的存在。<hex:02100103>即使在這裡，大家都緊繃地聽著警戒信號。★
+2,TEXT_REGSAK6MEHWAHHETSOAN_00882_TSEPPI_000_002,在瀰漫於空中的惡意已經消失了呢。<hex:02100103>現在森林的樹木和草叢也在輕輕搖曳。<hex:02100103>即使在這メワヘイゾーン中，終於恢復了平靜。★
+3,TEXT_REGSAK6MEHWAHHETSOAN_00882_TSEPPI_000_003,看來這個國家也正在迎來新的變革呢。<hex:02100103>對於我們生活在メワヘイゾーン的人來說，風會帶來什麼呢……<hex:02100103>我們村莊的每個人都對此關注著。★
+4,TEXT_REGSAK6MEHWAHHETSOAN_00882_TSEPPI_Q1_000_000,問題是什麼？★
+5,TEXT_REGSAK6MEHWAHHETSOAN_00882_TSEPPI_A1_000_001,請告訴我關於你的事情
+6,TEXT_REGSAK6MEHWAHHETSOAN_00882_TSEPPI_A1_000_002,這裡是什麼地方？
+7,TEXT_REGSAK6MEHWAHHETSOAN_00882_TSEPPI_A1_000_003,取消★
+8,TEXT_REGSAK6MEHWAHHETSOAN_00882_TSEPPI_000_004,我是澤皮，在這個村莊擔任偵察員。<hex:02100103>透過聆聽大自然的聲音，來感知到那帶著惡意的風，<hex:02100103>並警告家人、夥伴以及我們的家─洛內克存在危險。★
+9,TEXT_REGSAK6MEHWAHHETSOAN_00882_TSEPPI_000_005,「祖靈」，也就是洛內克，是我們重要的引導者。<hex:02100103>雖然每個家族或村莊所崇拜的祖靈動物各有不同，<hex:02100103>但我們都尊敬著洛內克，並維護照料著它。★
+10,TEXT_REGSAK6MEHWAHHETSOAN_00882_TSEPPI_000_006,這裡是メワヘイゾーン。<hex:02100103>正如其名「神獸享用草地」一般，<hex:02100103>是與我們的神獸─洛內克共同生活的村落。★
+11,TEXT_REGSAK6MEHWAHHETSOAN_00882_TSEPPI_000_007,即使說是村落，我們並不是定居在這裡。<hex:02100103>我們根據草原─洛內克的餌場，<hex:02100103>根據季節的變化而遷徙。★
+12,TEXT_REGSAK6MEHWAHHETSOAN_00882_TSEPPI_000_008,我們沒有建造房屋，而是搭建帳篷來生活，也是因為這個原因。<hex:02100103>這塊我們所在之地，不屬於任何特定地點，這就是メワヘイゾーン的意義。★
