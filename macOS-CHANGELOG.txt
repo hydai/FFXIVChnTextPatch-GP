@@ -1,6 +1,6 @@
 # 簡介
 
-對應原本 repo 的 [PatchTool 6.58 3/19 v3.2.1.5 版本](https://github.com/GpointChen/FFXIVChnTextPatch-GP/releases/tag/v3.2.1.5)
+對應原本 repo 的 [PatchTool 7.0 7/3 v3.3.0.1 版本](https://github.com/GpointChen/FFXIVChnTextPatch-GP/releases/tag/v3.3.0.1)
 此處只提供 macOS 的版本使用，經測試 Intel 與 Apple Silicon 系列都能正確執行。
 
 ## 安裝方式
@@ -24,3 +24,9 @@ FFXIVChnTextPatch-GP-4k-AppleSilicon.dmg # <--- 如果你是 AppleSilicon(M1/M2/
 ## 使用方式
 
 點兩下下載的檔案，掛載 dmg 以後，再點兩下 `FFXIVChnTextPatchGP.app` 執行即可
+
+### 注意事項
+
+如遇到無法執行的問題，請到系統偏好設定 -> 安全性與隱私 -> 通用，將「允許從以下位置下載的 App」設定為「任何來源」，再重新執行 App 即可。
+
+或參考蘋果官方文章來操作： https://support.apple.com/zh-tw/guide/mac-help/mchleab3a043/mac
