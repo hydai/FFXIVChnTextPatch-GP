@@ -1894,7 +1894,7 @@ int32,str
 12748,唔咕……咕咕咕……<hex:02100103>我……居然……
 12749,魔力填充率
 12750,
-12800,突破<hex:020996E802FF14><hex:022810FF0A>PlaceName<hex:F206F10103><hex:FF14><hex:022810FF0A>PlaceName<hex:F206F20103><hex:FF14><hex:022810FF0A>PlaceName<hex:F206F30103><hex:FF14><hex:022810FF0A>PlaceName<hex:F206F40103><hex:FF14><hex:022810FF0A>PlaceName<hex:F206F50103><hex:FF14><hex:022810FF0A>PlaceName<hex:F206F60103><hex:FF14><hex:022810FF0A>PlaceName<hex:F206F70103><hex:03>
+12800,突破<hex:02280FFF0A>PlaceName<hex:E8020103>
 12801,開啟寶箱
 12802,打倒所有敵人
 12803,使用寶物庫的鑰匙打開大門
@@ -1904,7 +1904,7 @@ int32,str
 12807,啟動召喚魔法陣
 12808,打倒所有敵人
 12809,打開寶箱獲得財寶
-12810,突破<hex:02096CE802FF14><hex:022810FF0A>PlaceName<hex:F20C9F0103><hex:FF14><hex:022810FF0A>PlaceName<hex:F20CA00103><hex:FF14><hex:022810FF0A>PlaceName<hex:F20CA10103><hex:FF14><hex:022810FF0A>PlaceName<hex:F20CA20103><hex:FF14><hex:022810FF0A>PlaceName<hex:F20CA30103><hex:03>
+12810,
 12811,
 12812,
 12813,
