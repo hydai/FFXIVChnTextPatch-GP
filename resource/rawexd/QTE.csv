@@ -22,5 +22,9 @@ int32,str,str,str,str,str
 17,SE_Bt_Etc_QTE_Ready,SE_Bt_Etc_QTE_Success,SE_Bt_Etc_QTE_Fail,死鬥,快速連擊按鈕壓制回去！
 18,SE_Bt_Etc_QTE_Ready,SE_Bt_Etc_QTE_Success,SE_Bt_Etc_QTE_Fail,曼德維爾橫跳,按下按鈕使出招式吧！
 19,SE_Bt_Etc_QTE_Ready,SE_Bt_Etc_QTE_Success,SE_Bt_Etc_QTE_Fail,脫離,快速連擊按鈕掙脫出來吧！
-20,,,,,
-21,,,,,
+20,SE_Bt_Etc_QTE_Ready,SE_Bt_Etc_QTE_Success,SE_Bt_Etc_QTE_Fail,保護,快速連擊按鈕保護克萊夫！
+21,SE_Bt_Etc_QTE_Ready,SE_Bt_Etc_QTE_Success,SE_Bt_Etc_QTE_Fail,抵抗,快速連擊按鈕抵禦攻擊！
+22,SE_Bt_Etc_QTE_Ready,SE_Bt_Etc_QTE_Success,SE_Bt_Etc_QTE_Fail,拼刀,快速連擊按鈕抗住攻擊！
+23,SE_Bt_Etc_QTE_Ready,SE_Bt_Etc_QTE_Success,SE_Bt_Etc_QTE_Fail,脫離,快速連擊按鈕掙脫出來，幫助庫伊奇！
+24,SE_Bt_Etc_QTE_Ready,SE_Bt_Etc_QTE_Success,SE_Bt_Etc_QTE_Fail,脫離,快速連擊按鈕突破攻擊！
+25,,,,,

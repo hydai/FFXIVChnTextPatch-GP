@@ -2,9 +2,9 @@
 #,,
 offset,0,4
 int32,str,str
-0,TEXT_SUBSEA165_01151_SEQ_00,北防波堤的黑渦團魯漢斯副漩士想要委託冒險者討伐魔物。
+0,TEXT_SUBSEA165_01151_SEQ_00,北防波堤的黑渦團員魯漢斯副漩士想要委託冒險者討伐魔物。
 1,TEXT_SUBSEA165_01151_SEQ_01,<hex:02280FFF09>BNpcName<hex:F202840103>在衛士軍墓周圍繁殖，魯漢斯副漩士為此很頭疼。討伐4隻<hex:02280FFF09>BNpcName<hex:F202840103>。
-2,TEXT_SUBSEA165_01151_SEQ_02,成功討伐了<hex:02280FFF09>BNpcName<hex:F202840103>。向黑渦團魯漢斯副漩士報告。
+2,TEXT_SUBSEA165_01151_SEQ_02,成功討伐了<hex:02280FFF09>BNpcName<hex:F202840103>。向黑渦團員魯漢斯副漩士報告。
 3,TEXT_SUBSEA165_01151_SEQ_03,墳墓周圍安靜了，魯漢斯很滿意。向骷髏谷營地的法爾克布瑞達報告，領取報酬。
 4,TEXT_SUBSEA165_01151_SEQ_04,向法爾克布瑞達報告完畢。身為魯漢斯的上級，她對冒險者的工作也很滿意。
 5,TEXT_SUBSEA165_01151_SEQ_05,
