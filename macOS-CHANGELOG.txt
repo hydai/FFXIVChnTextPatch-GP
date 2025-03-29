@@ -23,10 +23,26 @@ FFXIVChnTextPatch-GP-4k-AppleSilicon.dmg # <--- 如果你是 AppleSilicon(M1/M2/
 
 ## 使用方式
 
-點兩下下載的檔案，掛載 dmg 以後，再點兩下 `FFXIVChnTextPatchGP.app` 執行即可
+1. 點兩下下載的檔案，掛載 dmg 以後
+2. 請將 `FFXIVChnTextPatchGP.app` 拖進 `Applications` 資料夾
+3. 請到 `Applications` 資料夾中找到 `FFXIVChnTextPatchGP.app` 並點兩下執行
+4. 如果是第一次執行，應該會遇到安全性問題，請參考下方的注意事項
+5. 此時如果顯示「無法打開應用程式「FFXIVChnTextPatch-GP」。」，請參考下方的注意事項
 
 ### 注意事項
+
+#### 安全性問題
 
 如遇到無法執行的問題，請到系統偏好設定 -> 安全性與隱私 -> 通用，將「允許從以下位置下載的 App」設定為「任何來源」，再重新執行 App 即可。
 
 或參考蘋果官方文章來操作： https://support.apple.com/zh-tw/guide/mac-help/mchleab3a043/mac
+
+#### 無法打開應用程式
+
+請打開終端機，並執行以下指令：
+
+```bash
+# 請確保執行此指令前，已經做完 1. 安全性問題設定 2. 將 App 拖進 Applications 資料夾
+
+/Applications/FFXIVChnTextPatch-GP.app/Contents/MacOS/universalJavaApplicationStub
+```
